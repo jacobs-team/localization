@@ -1,0 +1,7 @@
+ { 
+    "language": "English",
+    "@language":{
+        "description":"current language"
+    },
+    "welcome":"Hello, User!"
+ }
