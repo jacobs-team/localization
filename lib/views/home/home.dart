@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -12,7 +12,22 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Localization Demo'),
+        title: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'Set Language Here',
+              style: TextStyle(height: 1),
+            ),
+            SizedBox(
+              width: 20,
+            ),
+            Icon(
+              Icons.forward,
+              size: 25,
+            )
+          ],
+        ),
         actions: [
           Center(
             child: PopupMenuButton(
